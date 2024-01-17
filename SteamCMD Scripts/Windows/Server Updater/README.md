@@ -44,7 +44,8 @@ Save the file.
 ## Error Handling
 
 The script checks if SteamCMD and the server installation path exist. If not, it displays an error message.
-License
+
+## License
 
 This project is licensed under the GNU General Public License - see the LICENSE file for details.
 Acknowledgments
