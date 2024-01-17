@@ -30,10 +30,11 @@ Edit the script to customize the following paths:
 
     Locate the lines with the following comments:
 
-rem Custom paths
-set "STEAMCMD_PATH=C:\path\to\custom\steamcmd\SteamCMD.exe"
-set "SERVER_INSTALL_PATH=C:\path\to\custom\server\installation"
-set "APP_ID=your_custom_app_id"
+   ```batch
+   rem Custom paths
+   set "STEAMCMD_PATH=C:\path\to\custom\steamcmd\SteamCMD.exe"
+   set "SERVER_INSTALL_PATH=C:\path\to\custom\server\installation"
+   set "APP_ID=your_custom_app_id"
 
 Modify the paths according to your preferences.
 
