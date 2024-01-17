@@ -26,9 +26,9 @@ Edit the script to customize the following paths:
 
 ## How to Edit the Script
 
-    Open Update Server.bat in a text editor (e.g., Notepad).
+Open Update Server.bat in a text editor (e.g., Notepad).
 
-    Locate the lines with the following comments:
+Locate the lines with the following comments:
 
    ```batch
    rem Custom paths
