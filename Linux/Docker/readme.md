@@ -23,9 +23,10 @@ This script automates the setup of a Pi-hole instance using Docker on Ubuntu Lin
 
 ### Accessing Pi-hole
 
-Once the setup is complete, you can access Pi-hole using the following URL:
+Upon successful setup, the script will provide the following information to access the Pi-hole dashboard:
 
-http://localhost/admin/
+-     Address: The IP address or hostname where Pi-hole is hosted.
+-     Password: The password to access the Pi-hole dashboard.
 
 The script will output the password for accessing the Pi-hole web interface. Make sure to note it down.
 
