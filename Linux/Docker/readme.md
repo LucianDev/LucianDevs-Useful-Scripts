@@ -40,4 +40,4 @@ Contributions are welcome! If you have suggestions or improvements, feel free to
 
 ### License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/LucianDev/LucianDevs-Useful-Scripts/blob/main/LICENSE "LICENSE") file for details.

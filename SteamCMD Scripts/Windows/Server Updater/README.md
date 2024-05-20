@@ -47,7 +47,8 @@ The script checks if SteamCMD and the server installation path exist. If not, it
 
 ## License
 
-This project is licensed under the GNU General Public License - see the LICENSE file for details.
-Acknowledgments
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/LucianDev/LucianDevs-Useful-Scripts/blob/main/LICENSE "LICENSE") file for details.
+
+## Acknowledgments
 
     Thanks to the SteamCMD developers.
