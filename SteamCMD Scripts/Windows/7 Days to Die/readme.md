@@ -17,12 +17,12 @@ Before running the script, ensure the following ports are open in your firewall:
 
 ### Usage
 
-1.     Download and install SteamCMD from the provided link.
-2.     Run the script and follow the prompts to specify the location of SteamCMD.
-3.     The script will download and update the server files automatically.
-4.     Open the Windows Firewall settings and ensure the required ports are open.
-5.     Modify the server settings as needed in the serverconfig.xml file.
-6.     Run startdedicated.bat within the 7dtd folder to start your server.
+1. Download and install SteamCMD from the provided link.
+2. Run the script and follow the prompts to specify the location of SteamCMD.
+3. The script will download and update the server files automatically.
+4. Open the Windows Firewall settings and ensure the required ports are open.
+5. Modify the server settings as needed in the serverconfig.xml file.
+6. Run startdedicated.bat within the 7dtd folder to start your server.
 
 ### Support
 
