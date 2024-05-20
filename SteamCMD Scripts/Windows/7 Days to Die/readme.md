@@ -5,15 +5,15 @@
 This script automates the setup process for a dedicated game server using SteamCMD. It creates the necessary folders, downloads and updates the server files, and guides users through the configuration steps.
 Requirements
 
--     Operating System: Windows 10 or higher
--     SteamCMD: The script requires SteamCMD to be installed on your system. You can download it from the [SteamCMD website](https://developer.valvesoftware.com/wiki/SteamCMD#Windows "SteamCMD website").
+- Operating System: Windows 10 or higher
+- SteamCMD: The script requires SteamCMD to be installed on your system. You can download it from the [SteamCMD website](https://developer.valvesoftware.com/wiki/SteamCMD#Windows "SteamCMD website").
 
 ### Firewall Ports
 
 Before running the script, ensure the following ports are open in your firewall:
 
--     26900 - 26902
--     8080 - 8082
+- 26900 - 26902
+- 8080 - 8082
 
 ### Usage
 
