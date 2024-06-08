@@ -50,6 +50,8 @@ The script will output the password for accessing the Pi-hole web interface. Mak
 
 You can modify the script to customize the Pi-hole setup according to your requirements. Refer to the script comments for guidance.
 
+You can find lists to block more stuff using [Firebog](https://firebog.net/ "Firebog")
+
 ### Contributing
 
 Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
