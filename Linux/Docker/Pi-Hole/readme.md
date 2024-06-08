@@ -17,7 +17,7 @@ This script automates the setup of a Pi-hole instance using Docker on Ubuntu Lin
     `sudo nano /etc/resolv.conf`
 4. Locate nameserver 127.0.0.53 (Could be different) replace the ip with
     `8.8.8.8`
-5. Save file using `control+x then y.` You can now proceed following the usage instructions.
+5. Save file using `control+x then y`. You can now proceed following the usage instructions.
 
 ### Usage
 
