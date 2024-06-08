@@ -11,7 +11,7 @@ This script automates the setup of a Pi-hole instance using Docker on Ubuntu Lin
 
 1. Clone this repository or download the script file.
 
-`git clone https://github.com/LucianDev/LucianDevs-Useful-Scripts/blob/main/Linux/Docker/PiHole.sh`
+`curl -O https://raw.githubusercontent.com/LucianDev/LucianDevs-Useful-Scripts/main/Linux/Docker/Pi-Hole/PiHole.sh`
 
 2. Make the script executable.
 
