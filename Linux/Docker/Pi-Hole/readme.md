@@ -10,12 +10,16 @@ This script automates the setup of a Pi-hole instance using Docker on Ubuntu Lin
 
 ### Using Ubuntu Do The Following First
 1. stop resolved.service
+
     `stop systemd-resolved.service`
 2. Disabled resolved.service
+
     `sudo systemctl disable systemd-resolved.service`
 3. Edit Resolv.conf
+
     `sudo nano /etc/resolv.conf`
 4. Locate nameserver 127.0.0.53 (Could be different) replace the ip with
+
     `8.8.8.8`
 5. Save file using `control+x then y`. You can now proceed following the usage instructions.
 
