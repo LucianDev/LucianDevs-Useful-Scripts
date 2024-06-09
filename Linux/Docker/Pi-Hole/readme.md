@@ -11,7 +11,7 @@ This script automates the setup of a Pi-hole instance using Docker on Ubuntu Lin
 ### Using Ubuntu Do The Following First
 1. stop resolved.service
 
-    `stop systemd-resolved.service`
+    `sudo systemctl stop systemd-resolved.service`
 2. Disabled resolved.service
 
     `sudo systemctl disable systemd-resolved.service`
