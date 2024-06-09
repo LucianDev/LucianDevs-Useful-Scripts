@@ -31,11 +31,11 @@ This script automates the setup of a Pi-hole instance using Docker on Ubuntu Lin
 
 2. Make the script executable.
 
-`chmod +x PiHole.sh`
+`sudo chmod +x PiHole.sh`
 
 3. Run the script.
 
-`./PiHole.sh`
+`sudo ./PiHole.sh`
 
 ### Accessing Pi-hole
 
