@@ -3,10 +3,10 @@
 
 # Support & Socials
 [Patreon](https://urlshorter.net/RDrPdc) • 
-[YouTube](https://www.youtube.com/@luciandev) • 
-[Twitch](https://www.twitch.tv/luciandevtv) • 
-[Kick](https://kick.com/luciandev) • 
-[X](https://x.com/LucianDevTV)
+[YouTube](https://urlshorter.net/sPVcIy) • 
+[Twitch](https://urlshorter.net/vJVlqU) • 
+[Kick](https://urlshorter.net/CkXVbu) • 
+[X](https://urlshorter.net/ALeDhI)
 
 # Update system
 `sudo apt update`
