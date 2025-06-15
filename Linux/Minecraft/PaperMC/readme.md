@@ -1,20 +1,36 @@
+# YouTube Video
+[How to Set Up a Minecraft Server with PaperMC on Ubuntu 24.04 (CLI Tutorial)](https://youtu.be/w-tQVrt2ZJc "How to Set Up a Minecraft Server with PaperMC on Ubuntu 24.04 (CLI Tutorial)")
+
+# Support & Socials
+[Patreon](https://urlshorter.net/RDrPdc) • 
+[YouTube](https://urlshorter.net/sPVcIy) • 
+[Twitch](https://urlshorter.net/vJVlqU) • 
+[Kick](https://urlshorter.net/CkXVbu) • 
+[X](https://urlshorter.net/ALeDhI)
+
 # Update system
 `sudo apt update`
+
 `sudo apt upgrade -y`
 
 # Install Java 21
 `sudo apt install openjdk-21-jre-headless`
 
+Please keep in mind different versions of Minecraft require different version of Java. In the video we are downloading 1.21.4 which uses this version, if you plan on hosting an older version you may need to find & install another version of java.
+
 # Create Minecraft directory
-```bash
-mkdir -p ~/papermc
-cd ~/papermc
-```
+
+`mkdir -p ~/papermc`
+
+`cd ~/papermc`
+
 
 # Download PaperMC
 `wget https://api.papermc.io/v2/projects/paper/versions/1.21.4/builds/232/downloads/paper-1.21.4-232.jar`
 
-**Create start script**
+This is the one used in the creation of the YouTube video, just change the link with whatever version you want.
+
+# Create start script
 `nano start.sh`
 
 # Paste into start.sh
@@ -48,8 +64,11 @@ Change eula=false to eula=true
 
 # Install RCON
 `wget https://github.com/Tiiffi/mcrcon/releases/download/v0.7.2/mcrcon-0.7.2-linux-x86-64.tar.gz`
+
 `tar -xvf mcrcon-0.7.2-linux-x86-64.tar.gz`
+
 `sudo mv mcrcon /usr/local/bin/`
+
 `sudo chmod +x /usr/local/bin/mcrcon`
 
 # Create systemd service
@@ -73,7 +92,9 @@ Don't forget to replace `REPLACEME` with your actual username before saving
 
 # Enable and start service
 `sudo systemctl daemon-reload`
+
 `sudo systemctl enable minecraft.service`
+
 `sudo systemctl start minecraft.service`
 
 # Open SSH port (essential to prevent getting locked out)
