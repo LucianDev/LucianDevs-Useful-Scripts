@@ -16,7 +16,7 @@
 # Install Java 21
 `sudo apt install openjdk-21-jre-headless`
 
-Please keep in mind different versions of Minecraft require different version of Java. In the video we are downloading 1.21.4 which uses this version, if you plan on hosting an older version you may need to find & install that version of java.
+Please keep in mind different versions of Minecraft require different version of Java. In the video we are downloading 1.21.4 which uses this version, if you plan on hosting an older version you may need to find & install another version of java.
 
 # Create Minecraft directory
 
