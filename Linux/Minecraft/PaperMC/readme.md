@@ -18,6 +18,7 @@
 
 # Download PaperMC
 `wget https://api.papermc.io/v2/projects/paper/versions/1.21.4/builds/232/downloads/paper-1.21.4-232.jar`
+
 This is the one used in the creation of the YouTube video, just change the link with whatever version you want.
 
 # Create start script
