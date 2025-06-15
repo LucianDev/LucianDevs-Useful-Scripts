@@ -1,20 +1,26 @@
+# YouTube Video
+[How to Set Up a Minecraft Server with PaperMC on Ubuntu 24.04 (CLI Tutorial)](https://youtu.be/w-tQVrt2ZJc "How to Set Up a Minecraft Server with PaperMC on Ubuntu 24.04 (CLI Tutorial)")
+
 # Update system
 `sudo apt update`
+
 `sudo apt upgrade -y`
 
 # Install Java 21
 `sudo apt install openjdk-21-jre-headless`
 
 # Create Minecraft directory
-```bash
-mkdir -p ~/papermc
-cd ~/papermc
-```
+
+`mkdir -p ~/papermc`
+
+`cd ~/papermc`
+
 
 # Download PaperMC
 `wget https://api.papermc.io/v2/projects/paper/versions/1.21.4/builds/232/downloads/paper-1.21.4-232.jar`
+This is the one used in the creation of the YouTube video, just change the link with whatever version you want.
 
-**Create start script**
+# Create start script
 `nano start.sh`
 
 # Paste into start.sh
@@ -73,7 +79,9 @@ Don't forget to replace `REPLACEME` with your actual username before saving
 
 # Enable and start service
 `sudo systemctl daemon-reload`
+
 `sudo systemctl enable minecraft.service`
+
 `sudo systemctl start minecraft.service`
 
 # Open SSH port (essential to prevent getting locked out)
