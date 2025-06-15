@@ -54,8 +54,11 @@ Change eula=false to eula=true
 
 # Install RCON
 `wget https://github.com/Tiiffi/mcrcon/releases/download/v0.7.2/mcrcon-0.7.2-linux-x86-64.tar.gz`
+
 `tar -xvf mcrcon-0.7.2-linux-x86-64.tar.gz`
+
 `sudo mv mcrcon /usr/local/bin/`
+
 `sudo chmod +x /usr/local/bin/mcrcon`
 
 # Create systemd service
