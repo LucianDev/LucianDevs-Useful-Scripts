@@ -2,10 +2,10 @@
 [How to Set Up a Minecraft Server with PaperMC on Ubuntu 24.04 (CLI Tutorial)](https://youtu.be/w-tQVrt2ZJc "How to Set Up a Minecraft Server with PaperMC on Ubuntu 24.04 (CLI Tutorial)")
 
 # Support & Socials
-[Patreon](https://urlshorter.net/RDrPdc) • 
-[YouTube](https://urlshorter.net/sPVcIy) • 
+[Patreon](https://bit.ly/4e3Rdri) • 
+[YouTube](https://bit.ly/4n35XuI) • 
 [Twitch](https://urlshorter.net/vJVlqU) • 
-[Kick](https://urlshorter.net/CkXVbu) • 
+[Kick](https://bit.ly/45lBUrX) • 
 [X](https://urlshorter.net/ALeDhI)
 
 # Update system
