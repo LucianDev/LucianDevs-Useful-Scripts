@@ -4,7 +4,7 @@ set SteamCMDPath=C:\Path\To\SteamCMD
 set InstallPath=C:\Path\To\SCUM\Server\Install
 
 :: Check and update SCUM server
-"%SteamCMDPath%\steamcmd.exe" +force_install_dir "%InstallPath%" +login anonymous +app_update 3792580 validate +quit
+"%SteamCMDPath%\steamcmd.exe" +force_install_dir "%InstallPath%" +login anonymous +app_update 3792580 +quit
 
 cd /d "%ServerPath%"
 start SCUMServer.exe -log
