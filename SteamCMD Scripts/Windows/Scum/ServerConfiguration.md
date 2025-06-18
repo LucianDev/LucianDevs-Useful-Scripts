@@ -43,3 +43,8 @@ In this file, you are able to see which players were silenced and what is the du
 
 # WhitelistedUsers.ini
 In this file, you are able to place SteamIDs of the players you want to have priority to connect to the server, this means that any player which is on this list will have priority access to the server, even if the server is full (if the server is full one player will be kicked out from the server).
+
+# Ports
+Important: The response port used for client connections is always the defined port +2. So, if you start the server with -port=7000, players will need to connect using IP:7002.
+
+If no port is defined, the server will use the default port 7779
