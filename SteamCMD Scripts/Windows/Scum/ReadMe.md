@@ -11,7 +11,7 @@
 [Twitch](https://urlshorter.net/vJVlqU) • 
 [Kick](https://bit.ly/45lBUrX) • 
 [X](https://urlshorter.net/ALeDhI) •
-[Ko-Fi](https://bit.ly/LucianKoFi "Ko-Fi")
+[Buy Me Coffee](https://bit.ly/BuyLucianCoffee)
 
 ### Server Config Information
 Information about the config files can be found [here](https://github.com/LucianDev/LucianDevs-Useful-Scripts/blob/main/SteamCMD%20Scripts/Windows/Scum/ServerConfiguration.md "CONFIGURATION OF THE SERVER").
