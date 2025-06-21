@@ -6,7 +6,8 @@
 [YouTube](https://bit.ly/4n35XuI) • 
 [Twitch](https://urlshorter.net/vJVlqU) • 
 [Kick](https://bit.ly/45lBUrX) • 
-[X](https://urlshorter.net/ALeDhI)
+[X](https://urlshorter.net/ALeDhI) •
+[Buy Me Coffee](https://bit.ly/BuyLucianCoffee)
 
 # Create plex user
 `sudo adduser plex`
