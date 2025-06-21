@@ -6,7 +6,8 @@
 [YouTube](https://bit.ly/4n35XuI) • 
 [Twitch](https://urlshorter.net/vJVlqU) • 
 [Kick](https://bit.ly/45lBUrX) • 
-[X](https://urlshorter.net/ALeDhI)
+[X](https://urlshorter.net/ALeDhI) •
+[Buy Me Coffee](https://bit.ly/BuyLucianCoffee)
 
 # Create systemd service file
 `sudo nano /etc/systemd/system/palworld.service`
