@@ -1,4 +1,4 @@
-# CONFIGURATION OF THE SERVER
+# [CONFIGURATION OF THE SERVER](https://docs.google.com/document/d/1y3zrrNbyEIw_TB2SsQ6clKBZVxIzpV4h-1z8EpUgPAQ/edit?tab=t.0#heading=h.fu7oadq3m4tz)
 
 After the initial start of the server, the necessary files for the configuration of the server will be generated, those files include all the .ini files you are able to edit.
 
