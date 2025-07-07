@@ -1,7 +1,7 @@
 # How to Setup an FTP Server on Windows
 
 ### YouTube Video:
-[Link]
+[Need an FTP Server? Here's How to Set One Up for FREE on Windows!](https://youtu.be/uI37rGaLVxA)
 
 ### Support & Socials
 [Patreon](https://bit.ly/4e3Rdri) • 
