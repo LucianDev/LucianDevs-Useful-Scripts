@@ -8,5 +8,5 @@ netsh advfirewall firewall add rule name="FTP Port 21" dir=in action=allow proto
 netsh advfirewall firewall add rule name="FTP Passive Ports" dir=in action=allow protocol=TCP localport=50000-50100
 
 echo.
-echo ✅ FTP ports opened successfully!
+echo FTP ports opened successfully.
 pause
