@@ -12,10 +12,10 @@ echo Updating V Rising Dedicated Server...
 :: === START SERVER ===
 cd /d "%InstallPath%"
 echo Starting V Rising Dedicated Server...
-start "" VRisingServer.exe -persistentDataPath save-data
+start "" VRisingServer.exe -persistentDataPath save-data -logFile ".\logs\VRisingServer.log"
 
 :: === ADDITIONAL NOTES ===
 :: You can modify ServerHostSettings.json and ServerGameSettings.json inside:
-::   %InstallPath%\save-data\Settings
+::   %InstallPath%\VRisingServer_Data\StreamingAssets\Settings
 
 pause

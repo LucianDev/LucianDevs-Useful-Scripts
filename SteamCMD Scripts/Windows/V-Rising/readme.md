@@ -15,86 +15,94 @@ This guide walks you through setting up a **V Rising dedicated server** on Windo
 
 ---
 
-## Requirements
+## 📁 Folder Structure
 
-- Windows 10/11 or Windows Server (64-bit)
-- Internet connection
-- [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD)
-- Open ports:
-  - `9876 UDP` (Game Port)
-  - `9877 UDP` (Steam Query Port)
-  - `25575 TCP` (RCON – optional)
-
----
-
-## 1. Folder Structure
-
-Recommended layout:
+Recommended folder layout:
 
 ```
 C:\servers\
-│
-├── steamcmd\          ← SteamCMD installed here
-└── vrising\           ← V Rising server installed here
+├── steamcmd\       ← SteamCMD installed here
+└── vrising\        ← V Rising server installed here
 ```
 
 ---
 
-## 2. Download Scripts
+## 📦 Download Provided Scripts
 
-Download the following files from this repository:
+Clone this repo or download these two batch files:
 
-- [`start-server.bat`](start-server.bat) — installs/updates and launches the server
-- [`firewall.bat`](firewall.bat) — opens the necessary Windows Firewall ports
+- `start-server.bat` – installs/updates and launches the server  
+- `firewall.bat` – opens necessary firewall ports
 
-Place both in any convenient location and run them individually.
+Place both in any folder, then run them as needed.
 
 ---
 
-## 3. Install & Launch the Server
+## 🚀 Setup Instructions
 
-### Step 1: Run `start-server.bat`
+### 1. Install & Run the Server
 
-This script will:
+Run `start-server.bat`.
+
+It will:
 
 - Install or update the V Rising server using SteamCMD
-- Launch the server using the correct persistent save path
+- Launch the server using a persistent save path: `save-data`
+- Save logs to: `logs\VRisingServer.log`
 
-By default, it expects:
+> Default paths:
+> - SteamCMD: `C:\servers\steamcmd`
+> - Server install: `C:\servers\vrising`
 
-- SteamCMD to be in: `C:\servers\steamcmd`
-- Server to install in: `C:\servers\vrising`
-
-> You can edit the script to change these paths if needed.
-
----
-
-## 4. Open Firewall Ports
-
-### Step 2: Run `firewall.bat` as Administrator
-
-This script will:
-
-- Open the following ports in Windows Firewall:
-  - `9876 UDP` (Game Port)
-  - `9877 UDP` (Steam Query Port)
-  - `25575 TCP` (RCON, optional)
+You can edit `start-server.bat` to change these locations.
 
 ---
 
-## 5. Configure the Server
+### 2. Open Firewall Ports
 
-After the server starts once, configuration files will be generated in:
+Run `firewall.bat` **as Administrator**.
+
+This opens the required ports in Windows Firewall:
+
+| Port   | Protocol | Description          |
+|--------|----------|----------------------|
+| 9876   | UDP      | Game port            |
+| 9877   | UDP      | Steam query port     |
+| 25575  | TCP      | RCON (optional)      |
+
+---
+
+### 3. Configure the Server
+
+#### A. Copy Default Config Files
+
+The server does not auto-generate editable config files. You must copy them manually:
+
+From:
+
+```
+C:\servers\vrising\VRisingServer_Data\StreamingAssets\Settings\
+```
+
+To:
 
 ```
 C:\servers\vrising\save-data\Settings\
 ```
 
-### Edit `ServerHostSettings.json`
+> Create the `Settings` folder under `save-data` if it doesn't exist.
 
-Modify key settings like name, password, player limit, etc.
+Files to copy:
 
-Example:
+- `ServerHostSettings.json`
+- `ServerGameSettings.json`
+
+---
+
+#### B. Edit `ServerHostSettings.json`
+
+Open `save-data\Settings\ServerHostSettings.json` and configure:
+
 ```json
 {
   "Name": "My V Rising Server",
@@ -104,42 +112,87 @@ Example:
   "MaxConnectedUsers": 10,
   "SaveName": "world1",
   "Password": "",
-  "ListOnMasterServer": true
+  "ListOnSteam": true,
+  "ListOnEOS": true
 }
 ```
 
-Game rules can be adjusted in `ServerGameSettings.json`.
+Make sure:
+
+- `"ListOnSteam": true` — to appear in the Steam server browser
+- `"ListOnEOS": true` — to appear on Epic Online Services
+- `"Password": ""` — leave blank for public access
 
 ---
 
-## 6. Join the Server
+## 🌐 Port Forwarding
 
-Players can connect in two ways:
+If hosting behind a router (e.g. home setup), forward these ports to your server's **local IP**:
 
-- **Direct Connect**:  
-  Enter `your-public-ip:9876` in the game’s server browser.
-
-- **Server List**:  
-  If `ListOnMasterServer` is `true`, your server will appear in the Community list.
-
----
-
-## 7. Port Forwarding (if behind a router)
-
-If you're hosting publicly, make sure to port forward:
-
-| Port   | Protocol | Purpose          |
-|--------|----------|------------------|
-| 9876   | UDP      | Game Port        |
-| 9877   | UDP      | Steam Query Port |
-| 25575  | TCP      | RCON (optional)  |
+| Port   | Protocol | Purpose              |
+|--------|----------|----------------------|
+| 9876   | UDP      | Game port            |
+| 9877   | UDP      | Steam query port     |
+| 25575  | TCP      | RCON (optional)      |
 
 ---
 
-## Notes
+## 🧪 Verifying Server Visibility
 
-- Back up the `save-data` folder regularly
-- Use a dynamic DNS service if your IP changes
-- You can schedule the server to start on boot or run it as a Windows Service using Task Scheduler or NSSM
+- **Steam**:  
+  Open Steam → View → Servers → Favorites → Add your public IP with port `9877`  
+  (e.g. `123.45.67.89:9877`)
+
+- **In-Game**:  
+  Use the **Community tab**, check "Show empty servers" and "Show password protected" to make sure it's not being filtered out.
 
 ---
+
+## 🛠️ Troubleshooting
+
+### ❗ EOS: SSL Certificate Error / Server Not Showing on EOS
+
+If your console logs show this:
+
+```
+libcurl error: 60 (SSL peer certificate or SSH remote key was not OK)
+SSL certificate problem: unable to get local issuer certificate
+```
+
+Then EOS cannot verify Epic's API certificate, and **crossplay/server listing will fail**.
+
+#### ✅ Fix:
+
+Run this in **Command Prompt or PowerShell as Administrator**:
+
+```cmd
+certutil -generateSSTFromWU roots.sst && certutil -addstore -f root roots.sst && del roots.sst
+```
+
+This downloads the latest root certificates from Windows Update and installs them.
+
+> Restart the server afterward. You should see EOS registration succeed.
+
+---
+
+### Other Common Issues
+
+- **Server not showing in browser?**
+  - Wait 1–5 minutes after starting
+  - Make sure the ports are forwarded and open
+  - Check that `ListOnSteam` or `ListOnEOS` is enabled
+
+- **Configs missing or reset after update?**
+  - Always keep your real configs in `save-data\Settings\`
+  - Never modify files in `StreamingAssets\Settings` — they’re reset on update
+
+- **Game connects but times out?**
+  - Make sure UDP 9876 and 9877 are open and not being blocked by a firewall or NAT
+
+---
+
+## ✅ You're Done!
+
+Your V Rising server is now installed, port-forwarded, visible (if configured), and ready for players.
+
+You can share your IP and port with friends, or let them find it in the community browser if visibility settings are enabled.
