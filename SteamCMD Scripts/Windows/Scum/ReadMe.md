@@ -120,7 +120,7 @@ Add Steam64 IDs (one per line) of players you want to give in-game admin privile
 Example:
 
 ```
-76561198000000000
+76561198000000000[SetGodMode, RestartServer]
 76561198011111111
 ```
 
