@@ -1,7 +1,7 @@
 @echo off
-set ServerPath=C:\Path\To\Your\SCUM\Binaries\Win64
-set SteamCMDPath=C:\Path\To\SteamCMD
-set InstallPath=C:\Path\To\SCUM\Server\Install
+set ServerPath=C:\servers\scum\SCUM\Binaries\Win64
+set SteamCMDPath=C:\servers\SteamCMD
+set InstallPath=C:\servers\scum\
 
 :: Check and update SCUM server
 "%SteamCMDPath%\steamcmd.exe" +force_install_dir "%InstallPath%" +login anonymous +app_update 3792580 validate +quit
