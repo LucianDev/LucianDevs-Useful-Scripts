@@ -1,7 +1,7 @@
 # How to Setup a SCUM Dedicated Server on Windows
 
 ### YouTube Video:
-[Link](#)
+[How to Setup a Dedicated SCUM Server on Windows](https://youtu.be/3px2NnXZuo8)
 
 ### Support & Socials
 [Patreon](https://bit.ly/4e3Rdri) • 
