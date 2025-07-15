@@ -1,7 +1,7 @@
 # How to Setup a 7 Days To Die Dedicated Server on Windows
 
 ### YouTube Video:
-[Link](#)
+[Host Your OWN 7 Days to Die Server on PC!](https://youtu.be/ciOTYRkknyE)
 
 ### Support & Socials
 [Patreon](https://bit.ly/4e3Rdri) • 
