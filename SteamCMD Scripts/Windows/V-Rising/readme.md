@@ -1,7 +1,7 @@
 # How to Setup a V-Rising Dedicated Server on Windows
 
 ### YouTube Video:
-[Link](#)
+[V Rising: Complete Dedicated Server Setup Tutorial for Windows](https://youtu.be/4Pk0iEU0_h4)
 
 ### Support & Socials
 [Patreon](https://bit.ly/4e3Rdri) • 
