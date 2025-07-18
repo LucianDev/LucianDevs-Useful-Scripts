@@ -35,6 +35,15 @@ if /I "%allowWeb%"=="Y" (
     echo Skipping TCP 8080 rule.
 )
 
+:: Optional Telnet Console (TCP 8081)
+set /p allowTelnet=Do you want to allow TCP port 8081 for Telnet console access? (Y/N): 
+if /I "%allowTelnet%"=="Y" (
+    echo Adding rule for Telnet Console TCP 8081...
+    netsh advfirewall firewall add rule name="7D2D Telnet TCP 8081" dir=in action=allow protocol=TCP localport=8081
+) else (
+    echo Skipping TCP 8081 rule.
+)
+
 echo.
 echo === Firewall configuration complete. ===
 pause
