@@ -6,6 +6,20 @@
 
 Welcome! This repository is the official resource hub for my YouTube channel, **[LucianDev](https://www.youtube.com/@LucianDev)**. Here you'll find all the scripts, configuration files, and Docker Compose stacks featured in my tutorials and videos.
 
+- [Home Lab Series](./Linux/Home%20Lab%20Series/)
+- [Steam Game Servers](./SteamCMD%20Scripts/)
+- [Pi-Hole](./Linux/Docker/Pi-Hole)
+- [Plex Media Server](./Linux/Plex%20Media%20Server)
+- [Windows FTP Server](./Windows/FTP%20Server)
+
+# Support & Socials
+[Patreon](https://bit.ly/4e3Rdri) • 
+[YouTube](https://bit.ly/4n35XuI) • 
+[Twitch](https://urlshorter.net/vJVlqU) • 
+[Kick](https://bit.ly/45lBUrX) • 
+[X](https://urlshorter.net/ALeDhI) •
+[Buy Me Coffee](https://bit.ly/BuyLucianCoffee)
+
 ## 📥 How to Use This Repository
 
 Most likely, you've come here from a video to grab a specific file. **You do not need to clone or download this entire repository.**
