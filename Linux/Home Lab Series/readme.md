@@ -40,7 +40,7 @@ Install Portainer to manage your Docker containers through an easy-to-use web in
 ---
 
 ### Part 4 – Deploying SearXNG
-Deploy your own self-hosted privacy-respecting metasearch engine using Docker.  
+Deploy your own self-hosted privacy-respecting metasearch engine using Portainer.  
 [▶️ Watch on YouTube](https://youtu.be/ps8y1ewiRlY)
 
 ---
