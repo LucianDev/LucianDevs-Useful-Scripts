@@ -37,7 +37,7 @@ Set up Docker to run lightweight containers and services in your homelab.
 ### Part 3 - Installing Portainer
 Install Portainer to manage your Docker containers through an easy-to-use web interface.
 
-[Watch on YouTube](#)
+[Watch on YouTube](https://youtu.be/1Kcp9b6E_yQ)
 
 ---
 
