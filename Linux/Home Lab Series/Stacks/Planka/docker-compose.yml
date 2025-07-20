@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  planka:
+    image: ghcr.io/plankanban/planka:latest
+    container_name: planka-app
+    restart: on-failure
+
+    ports:
+       - "3000:1337"
+
+    environment:
+      # --- REQUIRED CONFIGURATION ---
+      - BASE_URL=http://<server ip>:3000
+
+      # Your secret key
+      - SECRET_KEY=
+
+      # --- DO NOT CHANGE ---
+      - DATABASE_URL=postgresql://postgres@postgres/planka
+
+      # --- FILL OUT FOR ADMIN ACCOUNT ---
+      - DEFAULT_ADMIN_EMAIL=
+      - DEFAULT_ADMIN_PASSWORD=
+      - DEFAULT_ADMIN_NAME=
+      - DEFAULT_ADMIN_USERNAME=
+    volumes:
+      - planka-favicons:/app/public/favicons
+      - planka-user-avatars:/app/public/user-avatars
+      - planka-background-images:/app/public/background-images
+      - planka-attachments:/app/private/attachments
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+    networks:
+      - default
+      - proxy-net
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: planka-db
+    restart: on-failure
+    environment:
+      - POSTGRES_DB=planka
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    volumes:
+      - planka-db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d planka"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    # The database does not need to be on the proxy network.
+    # It will communicate with Planka over the default stack network.
+
+volumes:
+  planka-favicons:
+  planka-user-avatars:
+  planka-background-images:
+  planka-attachments:
+  planka-db-data:
+
+networks:
+  proxy-net:
+    external: true
