@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  searxng:
+    image: searxng/searxng:latest
+    container_name: searxng
+    restart: unless-stopped
+    ports:
+      - "8080:8080"  # Keep for home lab direct access; remove if behind proxy
+    environment:
+      - BASE_URL=http://<server-ip>:8080/  # Update if domain used with Nginx proxy
+      - INSTANCE_NAME=SearXNG
+      - TZ=America/Chicago # Change to your TimeZone
+    volumes:
+      - searxng_settings:/etc/searxng
+    networks:
+      - proxy-net
+
+volumes:
+  searxng_settings:
+
+networks:
+  proxy-net:
+    external: true  # Make sure to create this network outside this stack
