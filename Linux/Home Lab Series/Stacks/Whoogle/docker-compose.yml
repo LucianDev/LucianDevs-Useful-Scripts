@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  whoogle:
+    image: benbusby/whoogle-search
+    container_name: whoogle
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      WHOOGLE_CONFIG_COUNTRY: US
+      WHOOGLE_CONFIG_LANGUAGE: en
+      WHOOGLE_CONFIG_SAFE: 0
+    networks:
+      - proxy-net
+
+networks:
+  proxy-net:
+    external: true

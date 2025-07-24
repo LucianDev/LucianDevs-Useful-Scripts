@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  nginx-proxy-manager:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: nginx-proxy-manager
+    restart: always
+    ports:
+      - '80:80'     # HTTP
+      - '81:81'     # Web UI
+      - '443:443'   # HTTPS
+    networks:
+      - proxy-net
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+
+  db:
+    image: 'jc21/mariadb-aria:latest'
+    container_name: nginx-proxy-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'changeme'
+      MYSQL_DATABASE: 'npm'
+      MYSQL_USER: 'npm'
+      MYSQL_PASSWORD: 'changeme'
+    networks:
+      - proxy-net
+    volumes:
+      - ./mysql:/var/lib/mysql
+
+networks:
+  proxy-net:
+    driver: bridge

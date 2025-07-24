@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    environment:
+      - ADMIN_TOKEN=changeme
+      - TZ=America/Chicago
+      - DOMAIN=http://<server-ip>:8081
+      - WEBSOCKET_ENABLED=true
+    volumes:
+      - ./vw-data/:/data/
+    ports:
+      - 8081:80
+    restart: unless-stopped
+    networks:
+      - proxy-net
+
+networks:
+  proxy-net:
+    external: true
