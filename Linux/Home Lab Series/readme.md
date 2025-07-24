@@ -14,7 +14,7 @@ This series is designed to help you build a reliable and flexible home server se
 - Installing and configuring **Ubuntu Server**
 - Setting up **Docker** to manage containers
 - Deploying **Portainer** for container management via web UI
-- Deploying **SearXNG** for private search engine use
+- Deploying self-hosted tools like **Planka**, **Whoogle**, and **SearXNG**
 - And much more coming soon
 
 ---
@@ -39,25 +39,39 @@ Install Portainer to manage your Docker containers through an easy-to-use web in
 
 ---
 
-### Part 4 – Deploying SearXNG
+### Part 4 – Deploying SearXNG  
 Deploy your own self-hosted privacy-respecting metasearch engine using Portainer.  
 [▶️ Watch on YouTube](https://youtu.be/ps8y1ewiRlY)
 
 ---
 
+### Part 5 – Deploying Planka  
+Set up **Planka**, a self-hosted project management tool similar to Trello, for organizing tasks and projects.  
+[▶️ Watch on YouTube](https://youtu.be/vpzO7eJkOYg)
+
+---
+
+### Part 6 – Deploying Whoogle  
+Replace SearXNG with **Whoogle**, a lightweight, self-hosted Google search frontend focused on privacy.  
+[▶️ Watch on YouTube](https://youtu.be/6mGvfn7hCE0)
+
+---
+
 ## Tools Used
-- Ubuntu Server
-- Docker
-- Portainer
-- SearXNG
+- Ubuntu Server  
+- Docker  
+- Portainer  
+- SearXNG  
+- Planka  
+- Whoogle  
 - (More tools coming in future videos!)
 
 ---
 
 ## Upcoming Topics
-- Deploy Planka
-- Deploy Vault Warden
-- Deploy NextCloud
+- Deploy Vault Warden  
+- Deploy NextCloud  
+- Deploy AdGuard Home  
 - And More!
 
 Stay tuned and subscribe to catch the next episodes!
@@ -72,11 +86,11 @@ Have suggestions or want to see something specific covered? Feel free to open an
 ## Support the Channel
 If you find the series helpful, consider liking, subscribing, and sharing it with others who might benefit!
 
-[Patreon](https://bit.ly/4e3Rdri) • 
-[YouTube](https://bit.ly/4n35XuI) • 
-[Twitch](https://urlshorter.net/vJVlqU) • 
-[Kick](https://bit.ly/45lBUrX) • 
-[X](https://urlshorter.net/ALeDhI) •
+[Patreon](https://bit.ly/4e3Rdri) •  
+[YouTube](https://bit.ly/4n35XuI) •  
+[Twitch](https://urlshorter.net/vJVlqU) •  
+[Kick](https://bit.ly/45lBUrX) •  
+[X](https://urlshorter.net/ALeDhI) •  
 [Buy Me Coffee](https://bit.ly/BuyLucianCoffee)
 
 ---
