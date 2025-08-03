@@ -57,6 +57,18 @@ Replace SearXNG with **Whoogle**, a lightweight, self-hosted Google search front
 
 ---
 
+### Part 7 – Deploying Nginx Proxy Manager
+Set up **Nginx Proxy Manager** to easily manage and configure reverse proxies for your self-hosted services.  
+[▶️ Watch on YouTube](https://youtu.be/S6AweLc8RmU)
+
+---
+
+### Part 8 – Deploying AdGuard Home
+Install **AdGuard Home** to block ads, trackers, and enhance your network's privacy and security at the DNS level.  
+[▶️ Watch on YouTube](#)
+
+---
+
 ## Tools Used
 - Ubuntu Server  
 - Docker  
@@ -64,6 +76,8 @@ Replace SearXNG with **Whoogle**, a lightweight, self-hosted Google search front
 - SearXNG  
 - Planka  
 - Whoogle  
+- Nginx Proxy Manager
+- AdGuard Home
 - (More tools coming in future videos!)
 
 ---
@@ -71,9 +85,7 @@ Replace SearXNG with **Whoogle**, a lightweight, self-hosted Google search front
 ## Upcoming Topics
 - Deploy Vault Warden  
 - Deploy NextCloud  
-- Deploy AdGuard Home  
 - And More!
-
 Stay tuned and subscribe to catch the next episodes!
 
 ---
