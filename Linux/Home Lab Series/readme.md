@@ -65,7 +65,7 @@ Set up **Nginx Proxy Manager** to easily manage and configure reverse proxies fo
 
 ### Part 8 – Deploying AdGuard Home
 Install **AdGuard Home** to block ads, trackers, and enhance your network's privacy and security at the DNS level.  
-[▶️ Watch on YouTube](#)
+[▶️ Watch on YouTube](https://youtu.be/VGtY4cA02j0)
 
 ---
 
